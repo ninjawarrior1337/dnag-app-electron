@@ -7,7 +7,7 @@
     "scripts": {
         "start": "electron .",
         "pack": "electron-builder --dir",
-        "dist": "electron-builder -mwl --x64 --ia32"
+        "dist": "electron-builder -ml --x64 --ia32"
     },
     "dependencies": {
         "electron-squirrel-startup": "^1.0.0"
