@@ -1,0 +1,57 @@
+@product-sans
+{
+    font-family: prosans;
+    src: url(https://fonts.gstatic.com/s/productsans/v9/HYvgU2fE2nRJvZ5JFAumwZS3E-kSBmtLoNJPDtbj2Pk.ttf);
+}
+
+@keyframes example {
+    0%   {color: red;}
+    20% {color: orange;}
+    40% {color: yellow;}
+    60%   {color: green;}
+    80% {color: #3399ff;}
+    100% {color: red;}
+}
+
+@keyframes example2 {
+    0%   {background-color: red;}
+    20% {background-color: orange;}
+    40% {background-color: yellow;}
+    60%   {background-color: green;}
+    80% {background-color: #3399ff;}
+    100% {background-color: red;}
+}
+
+h1
+{
+    color: #3399ff;
+    font-size: 30px;
+    text-align: center;
+    font-family: Comfortaa;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#btn
+{
+    position: absolute;
+    left: 85%;
+    top: 7%;
+}
+
+body
+{
+    background: url(https://raw.githubusercontent.com/ninjawarrior1337/ninjawarrior1337.github.io/master/ecr/fall17/per2/activity1/toad.gif) no-repeat center center fixed;
+    background-size: 50%;
+    opacity: 1;
+}
+
+#rainbow
+{
+    animation-name: example2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}

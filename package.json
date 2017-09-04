@@ -1,0 +1,31 @@
+{
+    "name": "Hypnotoad",
+    "version": "0.0.1",
+    "main": "main.js",
+    "author": "Tyler Rothleder",
+    "description": "All glory to the Hypnotoad",
+    "scripts": {
+        "start": "electron .",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder --x64 --ia32"
+    },
+    "dependencies": {
+        "electron-squirrel-startup": "^1.0.0"
+    },
+    "devDependencies": {
+        "electron": "latest",
+        "electron-builder": "^19.27.3",
+        "electron-builder-squirrel-windows": "^19.27.3"
+    },
+    "build": {
+        "appId": "hypnotoad",
+        "productName": "Hypnotoad",
+        "squirrelWindows": {
+            "loadingGif": "build/install.gif",
+            "iconUrl": "http://www.iconeasy.com/icon/ico/Movie%20%26%20TV/Futurama%20Vol.%203%20-%20The%20Aliens/Hypnotoad.ico"
+        },
+        "win": {
+            "target": "squirrel"
+        }
+    }
+}
