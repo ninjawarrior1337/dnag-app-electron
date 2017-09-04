@@ -1,3 +1,8 @@
+dist: trusty
+sudo: false
+
+osx_image: xcode8.3
+
 language: node_js
 node_js:
   - "lts/*"
@@ -10,8 +15,10 @@ before_script:
     - sudo add-apt-repository ppa:ubuntu-wine/ppa -y
     - sudo apt-get update
     - sudo apt-get install --no-install-recommends -y wine1.8
-    
-script: npm run dist
+
+script:
+    - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then npm run dist -- --linux --win; fi
+    - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then yarn dist -- --mac; fi
 
 cache:
   directories:
