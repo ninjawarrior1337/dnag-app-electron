@@ -7,6 +7,10 @@ before_script:
     - echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
     - sudo apt-get update
     - sudo apt-get install --no-install-recommends -y mono-devel ca-certificates-mono
+    - sudo add-apt-repository ppa:ubuntu-wine/ppa -y
+    - sudo apt-get update
+    - sudo apt-get install --no-install-recommends -y wine1.8
+    
 script: npm run dist
 
 cache:
