@@ -24,8 +24,12 @@
             "loadingGif": "build/install.gif",
             "iconUrl": "http://www.iconeasy.com/icon/ico/Movie%20%26%20TV/Futurama%20Vol.%203%20-%20The%20Aliens/Hypnotoad.ico"
         },
+        "publish": {
+            "provider": "github"
+        },
         "win": {
-            "target": "squirrel"
+            "target": "squirrel",
+            "publish": ["github"]
         }
     }
 }
