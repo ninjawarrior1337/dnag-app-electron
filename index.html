@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-   <head>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
@@ -9,23 +11,24 @@
 
     <link href="style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-   </head>
+</head>
 
-    <body class="lelsame" id="a">
-        <div>
-            <h1>All glory to the hypnotoad</h1>
-            <!-- <a class="waves-effect waves-dark blue btn" id="btn" data-clipboard-text="All glory to the hypnotoad!">Copy to clipboard</a> -->
-            <audio controls autoplay loop hidden>
+<body class="lelsame" id="a">
+    <div>
+        <h1>All glory to the hypnotoad</h1>
+        <!-- <a class="waves-effect waves-dark blue btn" id="btn" data-clipboard-text="All glory to the hypnotoad!">Copy to clipboard</a> -->
+        <audio controls autoplay loop hidden>
                 <source src="assets/audio/hypnosound.mp3" type="audio/mpeg">
             </audio>
-        </div>
-        <div>
-            <!--<canvas id="myChart" width="400" height="400"></canvas>-->
-        </div>
-        <script>
-            var btn = document.getElementById('btn');
-            new Clipboard(btn);
-            </script>
-            <script src="main.js"></script>
-    </body>
+    </div>
+    <div>
+        <button type="button" name="button" id="signin">Sign In</button>
+    </div>
+    <script>
+        var btn = document.getElementById('btn');
+        new Clipboard(btn);
+    </script>
+    <script src="index.js"></script>
+</body>
+
 </html>

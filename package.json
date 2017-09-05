@@ -1,6 +1,6 @@
 {
     "name": "Hypnotoad",
-    "version": "0.0.1",
+    "version": "0.0.2a",
     "main": "main.js",
     "author": "Tyler Rothleder",
     "description": "All glory to the Hypnotoad",
@@ -28,7 +28,7 @@
             "provider": "github"
         },
         "win": {
-            "target": "squirrel",
+            "target": ["squirrel", "portable"],
             "publish": ["github"]
         }
     }
